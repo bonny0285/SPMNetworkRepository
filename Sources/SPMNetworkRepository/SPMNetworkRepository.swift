@@ -1,7 +1,7 @@
 import UIKit
 import Combine
 
-class SPMNetworkRepository {
+class NetworkRepository {
     
     let url: URL
     let latitude: Double
