@@ -1,3 +1,17 @@
-struct SPMNetworkRepository {
-    var text = "Hello, World!"
+import UIKit
+import Combine
+
+class SPMNetworkRepository {
+    
+    let url: URL
+    let latitude: Double
+    let longitude: Double
+    let language: String
+    
+    init(url: String, latitude: Double, longitude: Double, language: String) {
+        self.url = URL(string: url)!
+        self.latitude = latitude
+        self.longitude = longitude
+        self.language = language
+    }
 }
